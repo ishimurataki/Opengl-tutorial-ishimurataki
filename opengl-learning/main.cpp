@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include "1-opening-a-window.hpp"
+#include "2-the-first-triangle.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -16,6 +17,8 @@ int main(int argc, const char * argv[]) {
     
     if (strcmp(argv[1], "1") == 0) {
         return opening_a_window();
+    } else if (strcmp(argv[1], "2") == 0) {
+        return the_first_triangle();
     } else {
         fprintf(stderr, "Invalid tutorial number option.\n");
     }
