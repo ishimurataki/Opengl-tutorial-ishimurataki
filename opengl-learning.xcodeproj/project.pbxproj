@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C116083F2A369E280022F404 /* 2-the-first-triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C116083D2A369E280022F404 /* 2-the-first-triangle.cpp */; };
 		C11608432A36E6CF0022F404 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608412A36E6CF0022F404 /* shader.cpp */; };
+		C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608462A39884B0022F404 /* 3-matrices.cpp */; };
 		C137B0762A359AF0002351F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C137B0752A359AF0002351F4 /* main.cpp */; };
 		C137B07E2A359B12002351F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07D2A359B11002351F4 /* OpenGL.framework */; };
 		C137B0802A359B1A002351F4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07F2A359B1A002351F4 /* GLUT.framework */; };
@@ -36,6 +37,8 @@
 		C11608422A36E6CF0022F404 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
 		C11608442A36F3510022F404 /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
 		C11608452A36F4D30022F404 /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		C11608462A39884B0022F404 /* 3-matrices.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "3-matrices.cpp"; sourceTree = "<group>"; };
+		C11608472A39884B0022F404 /* 3-matrices.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "3-matrices.hpp"; sourceTree = "<group>"; };
 		C137B0722A359AF0002351F4 /* opengl-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C137B0752A359AF0002351F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C137B07D2A359B11002351F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -98,6 +101,8 @@
 				C137B0932A35B4A1002351F4 /* 1-opening-a-window.hpp */,
 				C116083D2A369E280022F404 /* 2-the-first-triangle.cpp */,
 				C116083E2A369E280022F404 /* 2-the-first-triangle.hpp */,
+				C11608462A39884B0022F404 /* 3-matrices.cpp */,
+				C11608472A39884B0022F404 /* 3-matrices.hpp */,
 				C11608442A36F3510022F404 /* SimpleVertexShader.vertexshader */,
 				C11608452A36F4D30022F404 /* SimpleFragmentShader.fragmentshader */,
 			);
@@ -172,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */,
 				C116083F2A369E280022F404 /* 2-the-first-triangle.cpp in Sources */,
 				C137B0942A35B4A1002351F4 /* 1-opening-a-window.cpp in Sources */,
 				C11608432A36E6CF0022F404 /* shader.cpp in Sources */,
