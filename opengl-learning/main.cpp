@@ -11,6 +11,7 @@
 #include "3-matrices.hpp"
 #include "4-a-colored-cube.hpp"
 #include "5-a-textured-cube.hpp"
+#include "6-keyboard-and-mouse.hpp"
 
 int main(int argc, const char * argv[]) {
     
@@ -33,6 +34,9 @@ int main(int argc, const char * argv[]) {
     } else if (strcmp(argv[1], "5") == 0) {
         printf("Running exercise 5 - a textured cube.\n");
         return a_textured_cube();
+    } else if (strcmp(argv[1], "6") == 0) {
+        printf("Running exercise 6 - keyboard and mouse.\n");
+        return keyboard_and_mouse();
     } else {
         fprintf(stderr, "Invalid tutorial number option.\n");
     }

@@ -1,13 +1,13 @@
 //
-//  5-a-textured-cube.cpp
+//  6-keyboard-and-mouse.cpp
 //  opengl-learning
 //
-//  Created by Takanao Ishimura on 6/14/23.
+//  Created by Takanao Ishimura on 6/18/23.
 //
 
-#include "5-a-textured-cube.hpp"
+#include "6-keyboard-and-mouse.hpp"
 
-int a_textured_cube() {
+int keyboard_and_mouse() {
     // Initialise GLFW
     if( !glfwInit() )
     {
@@ -52,19 +52,16 @@ int a_textured_cube() {
     GLuint vertexPosition_modelspaceID = glGetAttribLocation(programID, "vertexPosition_modelspace");
     GLuint vertexUVID = glGetAttribLocation(programID, "vertexUV");
     
-    // Projection matrix
-    glm::mat4 Projection = glm::perspective(glm::radians(45.0f), (float)width/(float)height, 0.1f, 100.0f);
-    
-    // Camera matrix
-    glm::mat4 View = glm::lookAt(glm::vec3(4, 3, -3),
-                                   glm::vec3(0, 0, 0),
-                                   glm::vec3(0, 1, 0));
+//    // Projection matrix
+//    glm::mat4 Projection = glm::perspective(glm::radians(45.0f), (float)width/(float)height, 0.1f, 100.0f);
+//
+//    // Camera matrix
+//    glm::mat4 View = glm::lookAt(glm::vec3(4, 3, -3),
+//                                   glm::vec3(0, 0, 0),
+//                                   glm::vec3(0, 1, 0));
     
     // Model matrix
     glm::mat4 Model = glm::mat4(1.0f);
-    
-    // ModelViewProjectionMatrix
-    glm::mat4 MVP = Projection * View * Model;
     
     // Load the texture
     GLuint Texture = loadBMP_custom("./textures/uvtemplate.bmp");
@@ -185,9 +182,18 @@ int a_textured_cube() {
     // Accept fragment if it closer to the camera than the former one
     glDepthFunc(GL_LESS);
     
+    // Hide cursor
+    glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+    
     while (glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && !glfwWindowShouldClose(window)) {
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT); // Clear the screen
         glUseProgram(programID); // Use our shader
+        
+        // recompute ModelViewProjectionMatrix matrix based on controls
+        computeMatricesFromInputs(window);
+        mat4 Projection = getProjectionMatrix();
+        mat4 View = getViewMatrix();
+        glm::mat4 MVP = Projection * View * Model;
         
         // send transformation to MVP uniform
         glUniformMatrix4fv(MatrixID, 1, GL_FALSE, &MVP[0][0]);

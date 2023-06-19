@@ -1,12 +1,12 @@
 //
-//  5-a-textured-cube.hpp
+//  6-keyboard-and-mouse.hpp
 //  opengl-learning
 //
-//  Created by Takanao Ishimura on 6/14/23.
+//  Created by Takanao Ishimura on 6/18/23.
 //
 
-#ifndef __a_textured_cube_hpp
-#define __a_textured_cube_hpp
+#ifndef __keyboard_and_mouse_hpp
+#define __keyboard_and_mouse_hpp
 
 #include <stdio.h>
 #include <iostream>
@@ -18,7 +18,8 @@ using namespace glm;
 
 #include "common/shader.hpp"
 #include "common/bitmap.hpp"
+#include "common/controls.hpp"
 
-int a_textured_cube();
+int keyboard_and_mouse();
 
-#endif /* __a_textured_cube_hpp */
+#endif /* __keyboard_and_mouse_hpp */

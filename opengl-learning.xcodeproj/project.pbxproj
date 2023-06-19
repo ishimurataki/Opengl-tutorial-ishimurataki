@@ -12,6 +12,9 @@
 		C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608462A39884B0022F404 /* 3-matrices.cpp */; };
 		C116084B2A39955E0022F404 /* 4-a-colored-cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608492A39955E0022F404 /* 4-a-colored-cube.cpp */; };
 		C116084E2A3ADB450022F404 /* 5-a-textured-cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */; };
+		C11608542A40185C0022F404 /* 6-keyboard-and-mouse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608522A40185C0022F404 /* 6-keyboard-and-mouse.cpp */; };
+		C11608572A4019FB0022F404 /* bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608552A4019FB0022F404 /* bitmap.cpp */; };
+		C116085A2A401AE60022F404 /* controls.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608582A401AE60022F404 /* controls.cpp */; };
 		C137B0762A359AF0002351F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C137B0752A359AF0002351F4 /* main.cpp */; };
 		C137B07E2A359B12002351F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07D2A359B11002351F4 /* OpenGL.framework */; };
 		C137B0802A359B1A002351F4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07F2A359B1A002351F4 /* GLUT.framework */; };
@@ -46,6 +49,12 @@
 		C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "5-a-textured-cube.cpp"; sourceTree = "<group>"; };
 		C116084D2A3ADB450022F404 /* 5-a-textured-cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "5-a-textured-cube.hpp"; sourceTree = "<group>"; };
 		C116084F2A3ED6860022F404 /* uvtemplate.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = uvtemplate.bmp; sourceTree = "<group>"; };
+		C11608522A40185C0022F404 /* 6-keyboard-and-mouse.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "6-keyboard-and-mouse.cpp"; sourceTree = "<group>"; };
+		C11608532A40185C0022F404 /* 6-keyboard-and-mouse.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "6-keyboard-and-mouse.hpp"; sourceTree = "<group>"; };
+		C11608552A4019FB0022F404 /* bitmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bitmap.cpp; sourceTree = "<group>"; };
+		C11608562A4019FB0022F404 /* bitmap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bitmap.hpp; sourceTree = "<group>"; };
+		C11608582A401AE60022F404 /* controls.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = controls.cpp; sourceTree = "<group>"; };
+		C11608592A401AE60022F404 /* controls.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = controls.hpp; sourceTree = "<group>"; };
 		C137B0722A359AF0002351F4 /* opengl-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C137B0752A359AF0002351F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C137B07D2A359B11002351F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -77,6 +86,10 @@
 			children = (
 				C11608412A36E6CF0022F404 /* shader.cpp */,
 				C11608422A36E6CF0022F404 /* shader.hpp */,
+				C11608552A4019FB0022F404 /* bitmap.cpp */,
+				C11608562A4019FB0022F404 /* bitmap.hpp */,
+				C11608582A401AE60022F404 /* controls.cpp */,
+				C11608592A401AE60022F404 /* controls.hpp */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -129,6 +142,8 @@
 				C116083E2A369E280022F404 /* 2-the-first-triangle.hpp */,
 				C11608462A39884B0022F404 /* 3-matrices.cpp */,
 				C11608472A39884B0022F404 /* 3-matrices.hpp */,
+				C11608522A40185C0022F404 /* 6-keyboard-and-mouse.cpp */,
+				C11608532A40185C0022F404 /* 6-keyboard-and-mouse.hpp */,
 				C11608492A39955E0022F404 /* 4-a-colored-cube.cpp */,
 				C116084A2A39955E0022F404 /* 4-a-colored-cube.hpp */,
 				C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */,
@@ -208,8 +223,11 @@
 				C116084B2A39955E0022F404 /* 4-a-colored-cube.cpp in Sources */,
 				C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */,
 				C116083F2A369E280022F404 /* 2-the-first-triangle.cpp in Sources */,
+				C11608542A40185C0022F404 /* 6-keyboard-and-mouse.cpp in Sources */,
+				C11608572A4019FB0022F404 /* bitmap.cpp in Sources */,
 				C137B0942A35B4A1002351F4 /* 1-opening-a-window.cpp in Sources */,
 				C116084E2A3ADB450022F404 /* 5-a-textured-cube.cpp in Sources */,
+				C116085A2A401AE60022F404 /* controls.cpp in Sources */,
 				C11608432A36E6CF0022F404 /* shader.cpp in Sources */,
 				C137B0762A359AF0002351F4 /* main.cpp in Sources */,
 			);
