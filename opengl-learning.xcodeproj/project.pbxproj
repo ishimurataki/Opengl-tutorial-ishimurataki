@@ -10,6 +10,8 @@
 		C116083F2A369E280022F404 /* 2-the-first-triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C116083D2A369E280022F404 /* 2-the-first-triangle.cpp */; };
 		C11608432A36E6CF0022F404 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608412A36E6CF0022F404 /* shader.cpp */; };
 		C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608462A39884B0022F404 /* 3-matrices.cpp */; };
+		C116084B2A39955E0022F404 /* 4-a-colored-cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C11608492A39955E0022F404 /* 4-a-colored-cube.cpp */; };
+		C116084E2A3ADB450022F404 /* 5-a-textured-cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */; };
 		C137B0762A359AF0002351F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C137B0752A359AF0002351F4 /* main.cpp */; };
 		C137B07E2A359B12002351F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07D2A359B11002351F4 /* OpenGL.framework */; };
 		C137B0802A359B1A002351F4 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C137B07F2A359B1A002351F4 /* GLUT.framework */; };
@@ -35,10 +37,15 @@
 		C116083E2A369E280022F404 /* 2-the-first-triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "2-the-first-triangle.hpp"; sourceTree = "<group>"; };
 		C11608412A36E6CF0022F404 /* shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = shader.cpp; sourceTree = "<group>"; };
 		C11608422A36E6CF0022F404 /* shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = shader.hpp; sourceTree = "<group>"; };
-		C11608442A36F3510022F404 /* SimpleVertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleVertexShader.vertexshader; sourceTree = "<group>"; };
-		C11608452A36F4D30022F404 /* SimpleFragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimpleFragmentShader.fragmentshader; sourceTree = "<group>"; };
+		C11608442A36F3510022F404 /* 5-VertexShader.vertexshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = "5-VertexShader.vertexshader"; sourceTree = "<group>"; };
+		C11608452A36F4D30022F404 /* 5-FragmentShader.fragmentshader */ = {isa = PBXFileReference; lastKnownFileType = text; path = "5-FragmentShader.fragmentshader"; sourceTree = "<group>"; };
 		C11608462A39884B0022F404 /* 3-matrices.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "3-matrices.cpp"; sourceTree = "<group>"; };
 		C11608472A39884B0022F404 /* 3-matrices.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "3-matrices.hpp"; sourceTree = "<group>"; };
+		C11608492A39955E0022F404 /* 4-a-colored-cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "4-a-colored-cube.cpp"; sourceTree = "<group>"; };
+		C116084A2A39955E0022F404 /* 4-a-colored-cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "4-a-colored-cube.hpp"; sourceTree = "<group>"; };
+		C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "5-a-textured-cube.cpp"; sourceTree = "<group>"; };
+		C116084D2A3ADB450022F404 /* 5-a-textured-cube.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "5-a-textured-cube.hpp"; sourceTree = "<group>"; };
+		C116084F2A3ED6860022F404 /* uvtemplate.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = uvtemplate.bmp; sourceTree = "<group>"; };
 		C137B0722A359AF0002351F4 /* opengl-learning */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "opengl-learning"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C137B0752A359AF0002351F4 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C137B07D2A359B11002351F4 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -74,6 +81,23 @@
 			path = common;
 			sourceTree = "<group>";
 		};
+		C11608502A3ED6A30022F404 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				C116084F2A3ED6860022F404 /* uvtemplate.bmp */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		C11608512A3ED7980022F404 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				C11608442A36F3510022F404 /* 5-VertexShader.vertexshader */,
+				C11608452A36F4D30022F404 /* 5-FragmentShader.fragmentshader */,
+			);
+			path = shaders;
+			sourceTree = "<group>";
+		};
 		C137B0692A359AF0002351F4 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +118,8 @@
 		C137B0742A359AF0002351F4 /* opengl-learning */ = {
 			isa = PBXGroup;
 			children = (
+				C11608512A3ED7980022F404 /* shaders */,
+				C11608502A3ED6A30022F404 /* textures */,
 				C11608402A36E6640022F404 /* common */,
 				C137B0862A35AED2002351F4 /* opengl-learning.entitlements */,
 				C137B0752A359AF0002351F4 /* main.cpp */,
@@ -103,8 +129,10 @@
 				C116083E2A369E280022F404 /* 2-the-first-triangle.hpp */,
 				C11608462A39884B0022F404 /* 3-matrices.cpp */,
 				C11608472A39884B0022F404 /* 3-matrices.hpp */,
-				C11608442A36F3510022F404 /* SimpleVertexShader.vertexshader */,
-				C11608452A36F4D30022F404 /* SimpleFragmentShader.fragmentshader */,
+				C11608492A39955E0022F404 /* 4-a-colored-cube.cpp */,
+				C116084A2A39955E0022F404 /* 4-a-colored-cube.hpp */,
+				C116084C2A3ADB450022F404 /* 5-a-textured-cube.cpp */,
+				C116084D2A3ADB450022F404 /* 5-a-textured-cube.hpp */,
 			);
 			path = "opengl-learning";
 			sourceTree = "<group>";
@@ -177,9 +205,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C116084B2A39955E0022F404 /* 4-a-colored-cube.cpp in Sources */,
 				C11608482A39884B0022F404 /* 3-matrices.cpp in Sources */,
 				C116083F2A369E280022F404 /* 2-the-first-triangle.cpp in Sources */,
 				C137B0942A35B4A1002351F4 /* 1-opening-a-window.cpp in Sources */,
+				C116084E2A3ADB450022F404 /* 5-a-textured-cube.cpp in Sources */,
 				C11608432A36E6CF0022F404 /* shader.cpp in Sources */,
 				C137B0762A359AF0002351F4 /* main.cpp in Sources */,
 			);
